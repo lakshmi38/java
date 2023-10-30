@@ -1,28 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>form</title>
-</head>
-<body>
-    <form name="f1" method="post" action="thanku.asp">
+    <head>
+        <title>
+            Registration form
+        </title>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td><lable for="name">Name</lable></td>
+                    <td><input type="text" name="uname" maxlength="10" required/></td>
+                </tr>
+                <tr>
+                   <td><lable for="age">Age</lable></td>
+                    <td><input type="number" name="uage" maxlength="2" min="18" max="90"/ required></td>
+                </tr>
+                <tr>
+                     <td><lable for="DOB">DOB</lable></td>
+                    <td><input type="date" name="udob" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><lable for="Email">Email</lable></td>
+                   <td><input type="email" name="uemail" ></td>
+               </tr>
+                
+                <tr>
+                    <td><lable for="address">Address</lable></td>
+                    <td><textarea rows="5" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td><lable for="moblenumber">mobilenumber</lable></td>
+                   <td><input type="tel" name="unumber" maxlength="10"></td>
+               </tr>
+                <tr>
+                    <td><lable for="gender">Gender</lable></td>
+                    <td><input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        </td>
+                </tr>
+                <tr>
+                    <td><lable for="country">Country</lable></td>
+                   <td><select name="country" size="3" >
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>canada</option>
+                    <option>russia</option>
+                    </select></td>
+            
+               </tr>
+               <tr>
+                <td><lable for="Hobbies">Hobbies</lable></td>
+               <td><input type="checkbox" name="hobby1" value="cooking"/>cooking
+                <input type="checkbox" name="hobby2" value="reading"/>reading
+                <input type="checkbox" name="hobby3" value="playing"/>playing
+                </td>
+           </tr>
+                <tr>
+                   <td>  <input type="submit" value="Register">
+                         <input type="submit" value="cancel">
+                   </td>
+                </tr>
 
-<h1><center>form<center></h1>
-first name:<input type="text" placeholder="first name"><br><br>
-last name:<input type="text" placeholder="last name"><br><br>
-gender:<input type="radio" name="gender">male<input type="radio" name="gender">female<input type="radio" name="gender">others<br><br>
-email:<input type="email" placeholder="enter email"<br><br><br>
-which game do you like?<input type="checkbox">PUBG<input type="checkbox">candycrush<input type="checkbox">freefire<br><br>
-mobile no:<input type="tel" placeholder="enter phone no"><br><br>
-Date of birth:<input type="date"><br><br>
-password:<input type="password"><br><br>
-age:<input type="no" placeholder="enter your age"><br><br>
-single selection:<select name:s1>
-    <option>11
-        <option>12
-</select><br><br>
-
-<input type="button" value="click">
-<input type="submit">
-<input type="button" value="Reset">
-</body>
+            </table>
+        </form>
+    </body>
 </html>
